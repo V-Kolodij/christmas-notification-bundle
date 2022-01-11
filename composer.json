@@ -1,0 +1,20 @@
+{
+    "name": "valdemar/christmas-notification-bundle",
+    "description": "Happy New Year!",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valdemar Kolodii",
+            "email": "kolodijv80@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "NewYear\\ChristmassNotificationBundle\\": "src/"
+        }
+    }
+}

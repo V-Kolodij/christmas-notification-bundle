@@ -11,4 +11,3 @@ christmas_notification:
   message: "Happy New Year!"
 ```
 And add Notification Transport which implements ChristmassNotificationTransportInterface and enjoy!
-Hello)

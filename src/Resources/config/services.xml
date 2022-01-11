@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+            <service id="new_year_christmass_notification.christmass_notification" class="NewYear\ChristmassNotificationBundle\ChristmassNotification" public="true">
+                <argument type="collection"/>
+            </service>
+            <service id="NewYear\ChristmassNotificationBundle\ChristmassNotification" alias="new_year_christmass_notification.christmass_notification" public="false"/>
+            <service id="new_year_christmass_notification.christmass_notification_transport" class="NewYear\ChristmassNotificationBundle\ChristmassNotificationTransport" >
+                <tag name="christmas_notification_transport"/>
+            </service>
+    </services>
+</container>
